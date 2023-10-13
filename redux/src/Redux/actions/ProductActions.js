@@ -1,19 +1,14 @@
 import {Actiontypes} from "../Constants/action-types"
-export const setproduct =(products)=>{
+export const setproducts =(products)=>{
  return{
     type:Actiontypes.SET_PRODUCTS,
     payload:products,
  }
 }
-export const selectproduct =(products)=>{
+export const selectproduct =(product)=>{
     return{
        type:Actiontypes.SELECTED_PRODUCT,
-       payload:products,
+       payload:product,
     }
    }
-   export const removeselectedproduct =(products)=>{
-    return{
-       type:Actiontypes.REMOVE_SELECTED_PRODUCT,
-       payload:products,
-    }
-   }
+   
